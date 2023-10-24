@@ -17,7 +17,9 @@ print(port_number)
 # Pages
 @app.route("/")
 def index():
-    return "Hello Docker!" + port_number
+    return "Hello Docker! Yes! Yes! Yes!" # + port_number
 	# return render_template("index.html")
 
-app.run(host="0.0.0.0", port=5000, debug=True)
+app.run(host="0.0.0.0")
+
+# , port=5000 , debug=True
